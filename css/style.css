@@ -3,6 +3,7 @@ body {
     color: #63391b;
     margin: 5px;
     padding: 5px;
+    font-size: 1.2em;
 }
 
 h1 {
@@ -67,9 +68,14 @@ li {
     position: absolute;
     top: -40px;
     left: 0;
-    
+
 }
 
 .skip:focus {
     top: 0;
+}
+
+#main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
