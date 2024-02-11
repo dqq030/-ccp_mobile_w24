@@ -6,17 +6,19 @@ body {
     font-size: 1.2em;
 }
 
-h1 {
-    font-size: xx-large;
+body h1 {
+    font-size: 1.5em;
     text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
 }
 
 h2 {
-    font-size: x-large;
+    font-size: 1.3em;
 }
 
 h3 {
-    font-size: large;
+    font-size: 1.1em;
 }
 
 h2,
@@ -24,6 +26,8 @@ h3,
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
+    margin: auto;
+    padding: 10px;
 }
 
 body * {
@@ -32,8 +36,8 @@ body * {
     margin-left: 5px;
 }
 
-ul {
-    list-style-type: circle;
+div ul {
+    list-style: circle;
     margin-left: 9px;
 }
 
@@ -52,11 +56,15 @@ video {
     padding: 10px;
     margin: 20px;
     border-top-right-radius: 30px;
+    max-height: 15em;
+    width: auto;
+    max-width: 15em;
 }
 
 li {
     display: inline-block;
     margin-left: 50px;
+    padding-left: 20px;
 }
 
 .page {
@@ -75,12 +83,29 @@ li {
     top: 0;
 }
 
-#main{
+#main {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-@media screen and (min-width: 80rem) {
+#main > div{
+    padding: 20px;
+    margin: 10px;
+    border: 5px solid #e6f3d4;
+    border-radius: 30px;
+    background-color: #f1f8eb;
+}
+
+nav {
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid #e6f3d4;
+    border-radius: 30px;
+    background-color: #f1f8eb;
+}
+
+
+@media screen and (max-width: 800px) {
     #main {
         grid-template-columns: 1fr;
     }
